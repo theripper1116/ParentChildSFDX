@@ -1,0 +1,32 @@
+<template>
+    <div onteja={handleParentOnTeja}>
+      <span onteja={handleParentOnTeja}>
+        <p onteja={handleParentOnTeja}>
+          <c-event-child-component
+            onteja={handleParentOnTeja}
+          ></c-event-child-component>
+        </p>
+      </span>
+    </div>
+  </template>
+
+
+<!-- we have applied the concept of event bubbling and capturing in this piece of code -->
+
+
+<!-- now bubbling means first child tag's event will execute and will go in the above direction 
+     i.e to its parent tag's event and will execute it -->
+
+
+<!-- now capturing means if we want to execute the parent tag'event first and movo on to the child tag's
+     event, capturing is rarely used in programming and mainly bubbling is used and used to calculate the 
+     shortest path from parent tag to the tag where event is fired -->
+
+
+<!-- as we don't have capturing in LWC, composed is introduced in LWC and is used to invoke the shadow host 
+     from parent and shadow host is nothing but the tag used to invoke the child component, and it allows 
+     parent to listen to the event defined within child component -->
+
+     
+<!-- detail is used to send the data from child component to parent component and it send the data along 
+     with the event -->

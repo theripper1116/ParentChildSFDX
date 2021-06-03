@@ -1,0 +1,9 @@
+<template>
+    <div>Hey!! this is the page created in salesforce</div>
+    {message}
+    <lightning-input label="Location" name="location" onchange={checkText}></lightning-input>
+    <lightning-input label="Greetings" name="greetings" onchange={clickText}></lightning-input>
+    <lightning-input label="Title" name="title"  onchange={clickText}></lightning-input>
+    <lightning-input label="Sub Title" name="subTitle" onchange={clickText}></lightning-input>
+    <lightning-button label="Save" onclick={clickMe}></lightning-button>
+</template>

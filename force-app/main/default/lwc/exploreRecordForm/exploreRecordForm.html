@@ -1,0 +1,14 @@
+<template>
+    <lightning-record-form
+      record-id={recordId}
+      object-api-name="Account"
+      fields={fields}
+      mode="view"
+    >
+    <!-- mode="view" allows edit as well as display of the fields when we click the field, we can edit this
+        where as in "readonly" the fields aare diplayed but not editable -->
+    <!-- here in fields attribute, we are mentioning the fields name by field api name in js file
+        and there is one more, "layout-type" attribute which has two types of values:- "Full" and "Compact"
+        Full will display all the fields and compact will show only the highlighted fields -->
+</lightning-record-form>
+  </template>
